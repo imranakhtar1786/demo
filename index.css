@@ -16,7 +16,7 @@
     width: 100%;
     height: auto;
     /* per your request */
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 /* Each slide fills the container */
@@ -77,6 +77,7 @@
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
     /* margin: 0rem 20px; */
     margin-top: 40px;
+    background-color: red;
 }
 
 /* Background Image */
@@ -254,11 +255,11 @@
     /* ensures good cropping on all screens */
 }
 
-.swiper-wrapper {
+/* .swiper-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .custom-cards-section {
     padding: 4rem 2rem;
@@ -366,9 +367,4 @@
   .footer-right p {
     text-align: center;
   }
-  /* .swiper-wrapper {
-    display: block;
-    align-items: center;
-    justify-content: center;
-} */
 }
