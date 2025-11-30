@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>demo</title>
+
+  <!-- Swiper CSS (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+</head>
+
+<body>
+  <!-- Preload LCP hero image -->
+  <link rel="preload" as="image"
+    href="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/banner-3-1500.webp">
+
+  <div class="headers">
+    <img src="https://media.swipepages.com/2025/11/692532d480c1450011af8c59/vikram-mills-logo.png" height="60"
+      width="60" alt="logo">
+  </div>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <!-- First slide = LCP image (NO lazy loading) -->
+      <div class="swiper-slide">
+        <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/banner-3-1500.webp"
+          width="1500" height="900" alt="Slide 1" />
+      </div>
+
+      <!-- Remaining slides = Lazy loaded -->
+      <div class="swiper-slide">
+        <img
+          src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/vikram-mills-banner-1500.webp"
+          loading="lazy" width="1500" height="900" alt="Slide 2" />
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/banner-2-1500.webp"
+          loading="lazy" width="1500" height="900" alt="Slide 3" />
+      </div>
+    </div>
+  </div>
+  <div class="product-heading">
+    SHOP BASMATI RICE
+  </div>
+  <div class="swiper cardSwiper">
+
+    <div class="swiper-wrapper">
+
+      <!-- CARD 1 -->
+      <div class="swiper-slide card">
+        <div class="card-bg"
+          style="background-image: url('https://img.freepik.com/free-photo/plain-yellow-wall-product-background_53876-100290.jpg?t=st=1764420501~exp=1764424101~hmac=b3f7445b77a86561816035350c1664f2891631a051545991fbf4ce5019e1ef17&w=1480');">
+        </div>
+        <img class="card-logo"
+          src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/super-basmati.webp" alt="logo">
+        <div class="card-title">
+          <p>Buy Now</p>
+          <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-zepto-300.webp"
+            height="50" width="50"
+            onclick="window.open('https://www.zepto.com/pn/vikram-mills-super-basmati-rice/pvid/3af3f696-2bfb-47e8-b3b9-3ffcf491bfa8?marketplaceType=ZEPTO_NOW', '_blank')">
+          <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-icon-flipkart-300.webp"
+            onclick="window.open('https://www.flipkart.com/vikram-mills-basmati-super-rice/p/itm4fe0cab5fab54?pid=RICHE5K4XZCBGFYX&lid=LSTRICHE5K4XZCBGFYXP9T1O3&marketplace=GROCERY&shopId=&iid=a0d49f29-baa1-4b64-abbb-20e12d3806d4.RICHE5K4XZCBGFYX.SEARCH', '_blank')"
+            height="50" width="50">
+        </div>
+        <div class="card-text-heading">
+          Super Basmati
+        </div>
+      </div>
+
+      <div class="swiper-slide card">
+        <div class="card-bg"
+          style="background-image: url('https://img.freepik.com/free-photo/plain-yellow-wall-product-background_53876-100290.jpg?t=st=1764420501~exp=1764424101~hmac=b3f7445b77a86561816035350c1664f2891631a051545991fbf4ce5019e1ef17&w=1480');">
+        </div>
+        <img class="card-logo"
+          src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/essence-rice.webp" alt="logo">
+        <div class="card-title">
+          <p>Buy Now</p>
+          <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-zepto-300.webp"
+            height="50" width="50"
+            onclick="window.open('https://www.zepto.com/?source_caller=ui&deep_link_sub1=url&shortlink=vpuuf7nd&c=Vikram14&pid=Vikram14%20UTM%2012_NOV&deep_link_value=https%3A%2F%2Fwww.zepto.com%2Funcl%2Fget-your-home-needs%3FclientParams%3DSTORE_ID%26scid%3D2f428a69-b161-401a-9181-8286bf84de80&af_xp=social', '_blank')">
+          <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-icon-flipkart-300.webp"
+            onclick="window.open('https://www.flipkart.com/vikram-mills-basmati-essence-rice/p/itm3e51eded8f06a?pid=RICHE5K42USEYJUB&lid=LSTRICHE5K42USEYJUBE3G7UQ&marketplace=GROCERY&cmpid=content_rice_8965229628_gmc%C2%AEion_id=bz_son_mal_wh_g_01', '_blank')"
+            height="50" width="50">
+        </div>
+        <div class="card-text-heading">
+          Essence Rice
+        </div>
+      </div>
+
+      <div class="swiper-slide card">
+        <div class="card-bg"
+          style="background-image: url('https://img.freepik.com/free-photo/plain-yellow-wall-product-background_53876-100290.jpg?t=st=1764420501~exp=1764424101~hmac=b3f7445b77a86561816035350c1664f2891631a051545991fbf4ce5019e1ef17&w=1480');">
+        </div>
+        <img class="card-logo"
+          src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/rozana-rice.webp" alt="logo">
+        <div class="card-title">
+          <p>Buy Now</p>
+          <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-zepto-300.webp"
+            height="50" width="50"
+            onclick="window.open('https://www.zepto.com/pn/vikram-mills-rozana-basmati-rice/pvid/0be1eb1d-4a7d-4c88-ae34-cb9c2066c093?marketplaceType=ZEPTO_NOW', '_blank')">
+
+        </div>
+        <div class="card-text-heading">
+          Rozana Rice
+        </div>
+      </div>
+
+      <div class="swiper-slide card">
+        <div class="card-bg"
+          style="background-image: url('https://img.freepik.com/free-photo/plain-yellow-wall-product-background_53876-100290.jpg?t=st=1764420501~exp=1764424101~hmac=b3f7445b77a86561816035350c1664f2891631a051545991fbf4ce5019e1ef17&w=1480');">
+        </div>
+        <img class="card-logo"
+          src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/mogra-rice.webp" alt="logo">
+        <div class="card-title">
+          <p>Buy Now</p>
+          <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-zepto-300.webp"
+            height="50" width="50"
+            onclick="window.open('https://www.zepto.com/pn/vikram-mills-mogra-basmati-rice/pvid/8045889d-f767-418b-8f64-120d60375bd2?marketplaceType=ZEPTO_NOW', '_blank')">
+
+        </div>
+        <div class="card-text-heading">
+          Mogra Rice
+        </div>
+      </div>
+
+      <div class="swiper-slide card">
+        <div class="card-bg"
+          style="background-image: url('https://img.freepik.com/free-photo/plain-yellow-wall-product-background_53876-100290.jpg?t=st=1764420501~exp=1764424101~hmac=b3f7445b77a86561816035350c1664f2891631a051545991fbf4ce5019e1ef17&w=1480');">
+        </div>
+        <img class="card-logo"
+          src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/statement-rozana.webp"
+          alt="logo">
+        <div class="card-title">
+          <p>Buy Now</p>
+          <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-zepto-300.webp"
+            height="50" width="50"
+            onclick="window.open('https://www.zepto.com/pn/vikram-mills-statement-rozana-basmati-rice/pvid/91ed4b8b-adfb-49d4-9f44-127c6abb9e7d?marketplaceType=ZEPTO_NOW', '_blank')">
+          <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-icon-flipkart-300.webp"
+            onclick="window.open('https://www.flipkart.com/vikram-mills-basmati-statement-rozana-rice/p/itm7d7a963b3a9c9?pid=RICHE5K4UHKCJQTD&lid=LSTRICHE5K4UHKCJQTDSJU8PW&marketplace=GROCERY&shopId=&iid=a0d49f29-baa1-4b64-abbb-20e12d3806d4.RICHE5K4UHKCJQTD.SEARCH', '_blank')"
+            height="50" width="50">
+        </div>
+        <div class="card-text-heading">
+          Statement Rozana
+        </div>
+      </div>
+
+      <div class="swiper-slide card">
+        <div class="card-bg"
+          style="background-image: url('https://img.freepik.com/free-photo/plain-yellow-wall-product-background_53876-100290.jpg?t=st=1764420501~exp=1764424101~hmac=b3f7445b77a86561816035350c1664f2891631a051545991fbf4ce5019e1ef17&w=1480');">
+        </div>
+        <img class="card-logo"
+          src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/essence-rice.webp" alt="logo">
+        <div class="card-title">
+          <p>Buy Now</p>
+          <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-zepto-300.webp"
+            height="50" width="50"
+            onclick="window.open('https://www.zepto.com/pn/vikram-mills-tibar-basmati-rice/pvid/7ca3e0a1-c477-4a1b-9b4e-03e9bfa8acaf?marketplaceType=ZEPTO_NOW', '_blank')">
+          <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-icon-flipkart-300.webp"
+            src
+            onclick="window.open('https://www.flipkart.com/vikram-mills-basmati-tibar-rice/p/itm764eccb3d3b89?pid=RICHE5K4AZPZUHGF&lid=LSTRICHE5K4AZPZUHGFMWBXLC&marketplace=GROCERY&shopId=&iid=a0d49f29-baa1-4b64-abbb-20e12d3806d4.RICHE5K4AZPZUHGF.SEARCH', '_blank')"
+            height="50" width="50">
+        </div>
+        <div class="card-text-heading">
+          Tibar Rice
+        </div>
+
+        <div class="swiper-slide card">
+          <div class="card-bg"
+            style="background-image: url('https://img.freepik.com/free-photo/plain-yellow-wall-product-background_53876-100290.jpg?t=st=1764420501~exp=1764424101~hmac=b3f7445b77a86561816035350c1664f2891631a051545991fbf4ce5019e1ef17&w=1480');">
+          </div>
+          <img class="card-logo"
+            src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/mini-mogra.webp" alt="logo">
+          <div class="card-title">
+            <p>Buy Now</p>
+            <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-zepto-300.webp"
+              height="50" width="50"
+              onclick="window.open('https://www.zepto.com/pn/vikram-mills-mini-mogra-basmati-rice/pvid/33b65028-d4ea-4735-9d09-dce75d5038be?marketplaceType=ZEPTO_NOW', '_blank')">
+
+          </div>
+          <div class="card-text-heading">
+            Mini Mogra
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+
+      </div>
+    </div>
+  </div>
+  <div class="product-heading">
+    SHOP FRESH CHAKKI ATTA
+  </div>
+  <div class="second-cards">
+
+
+    <div class="swiper-slide card">
+      <div class="card-bg"
+        style="background-image: url('https://img.freepik.com/free-photo/plain-yellow-wall-product-background_53876-100290.jpg?t=st=1764420501~exp=1764424101~hmac=b3f7445b77a86561816035350c1664f2891631a051545991fbf4ce5019e1ef17&w=1480');">
+      </div>
+      <img class="card-logo" src="./atta packet vikram mills.webp" alt="logo">
+      <div class="card-title">
+        <p>Buy Now</p>
+        <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-zepto-300.webp"
+          height="50" width="50"
+          onclick="window.open('https://www.swiggy.com/stores/instamart/item/KEX14GJ2NC?share=true', '_blank')">
+        <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-swiggy-500.webp"
+          height="50" width="50"
+          onclick="window.open('https://www.swiggy.com/stores/instamart/item/KEX14GJ2NC?share=true', '_blank')">
+
+        <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-blinkit-150.webp"
+          height="50" width="50" onclick="window.open('https://blinkit.com/prn/x/prid/500269', '_blank')">
+        <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-bigbasket-150.webp"
+          height="50" width="50"
+          onclick="window.open('https://www.zepto.com/pn/vikram-mills-mini-mogra-basmati-rice/pvid/33b65028-d4ea-4735-9d09-dce75d5038be?marketplaceType=ZEPTO_NOW', '_blank')">
+        <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-flipkart-minutes-150.webp"
+          height="50" width="50"
+          onclick="window.open('https://www.zepto.com/pn/vikram-mills-mini-mogra-basmati-rice/pvid/33b65028-d4ea-4735-9d09-dce75d5038be?marketplaceType=ZEPTO_NOW', '_blank')">
+
+      </div>
+      <div class="card-text-heading">
+        Mini Mogra
+      </div>
+
+      <!-- CARD 2 -->
+
+    </div>
+  </div>
+  </div>
+
+  <div class="product-heading" style="margin-top: 30px;">
+    SHOP OTHER PRODUCTS
+  </div>
+
+  <div class="swiper cardSwiper">
+
+    <div class="swiper-wrapper">
+
+      <!-- CARD 1 -->
+      <div class="swiper-slide card">
+        <div class="card-bg"
+          style="background-image: url('https://img.freepik.com/free-photo/plain-yellow-wall-product-background_53876-100290.jpg?t=st=1764420501~exp=1764424101~hmac=b3f7445b77a86561816035350c1664f2891631a051545991fbf4ce5019e1ef17&w=1480');">
+        </div>
+        <img class="card-logo" src="./Rawa  vikram mills.webp" alt="logo">
+        <div class="card-title">
+          <p>Buy Now</p>
+          <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-zepto-300.webp"
+            height="50" width="50"
+            onclick="window.open('https://www.zepto.com/pn/vikram-mills-super-basmati-rice/pvid/3af3f696-2bfb-47e8-b3b9-3ffcf491bfa8?marketplaceType=ZEPTO_NOW', '_blank')">
+          <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-icon-flipkart-300.webp"
+            onclick="window.open('https://www.flipkart.com/vikram-mills-basmati-super-rice/p/itm4fe0cab5fab54?pid=RICHE5K4XZCBGFYX&lid=LSTRICHE5K4XZCBGFYXP9T1O3&marketplace=GROCERY&shopId=&iid=a0d49f29-baa1-4b64-abbb-20e12d3806d4.RICHE5K4XZCBGFYX.SEARCH', '_blank')"
+            height="50" width="50">
+        </div>
+        <div class="card-text-heading">
+          Rawa
+        </div>
+      </div>
+
+      <div class="swiper-slide card">
+        <div class="card-bg"
+          style="background-image: url('https://img.freepik.com/free-photo/plain-yellow-wall-product-background_53876-100290.jpg?t=st=1764420501~exp=1764424101~hmac=b3f7445b77a86561816035350c1664f2891631a051545991fbf4ce5019e1ef17&w=1480');">
+        </div>
+        <img class="card-logo" src="./Maida vikram mills.webp" alt="logo">
+        <div class="card-title">
+          <p>Buy Now</p>
+          <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-zepto-300.webp"
+            height="50" width="50"
+            onclick="window.open('https://www.zepto.com/?source_caller=ui&deep_link_sub1=url&shortlink=vpuuf7nd&c=Vikram14&pid=Vikram14%20UTM%2012_NOV&deep_link_value=https%3A%2F%2Fwww.zepto.com%2Funcl%2Fget-your-home-needs%3FclientParams%3DSTORE_ID%26scid%3D2f428a69-b161-401a-9181-8286bf84de80&af_xp=social', '_blank')">
+          <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-icon-flipkart-300.webp"
+            onclick="window.open('https://www.flipkart.com/vikram-mills-basmati-essence-rice/p/itm3e51eded8f06a?pid=RICHE5K42USEYJUB&lid=LSTRICHE5K42USEYJUBE3G7UQ&marketplace=GROCERY&cmpid=content_rice_8965229628_gmc%C2%AEion_id=bz_son_mal_wh_g_01', '_blank')"
+            height="50" width="50">
+        </div>
+        <div class="card-text-heading">
+          Maida
+        </div>
+      </div>
+
+      <div class="swiper-slide card">
+        <div class="card-bg"
+          style="background-image: url('https://img.freepik.com/free-photo/plain-yellow-wall-product-background_53876-100290.jpg?t=st=1764420501~exp=1764424101~hmac=b3f7445b77a86561816035350c1664f2891631a051545991fbf4ce5019e1ef17&w=1480');">
+        </div>
+        <img class="card-logo" src="./Sooji vikram mills.webp" alt="logo">
+        <div class="card-title">
+          <p>Buy Now</p>
+          <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-zepto-300.webp"
+            height="50" width="50"
+            onclick="window.open('https://www.zepto.com/pn/vikram-mills-rozana-basmati-rice/pvid/0be1eb1d-4a7d-4c88-ae34-cb9c2066c093?marketplaceType=ZEPTO_NOW', '_blank')">
+
+        </div>
+        <div class="card-text-heading">
+          Sooji
+        </div>
+      </div>
+
+      <div class="swiper-slide card">
+        <div class="card-bg"
+          style="background-image: url('https://img.freepik.com/free-photo/plain-yellow-wall-product-background_53876-100290.jpg?t=st=1764420501~exp=1764424101~hmac=b3f7445b77a86561816035350c1664f2891631a051545991fbf4ce5019e1ef17&w=1480');">
+        </div>
+        <img class="card-logo" src="./Dalia vikram mills.webp" alt="logo">
+        <div class="card-title">
+          <p>Buy Now</p>
+          <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/3d-zepto-300.webp"
+            height="50" width="50"
+            onclick="window.open('https://www.zepto.com/pn/vikram-mills-mogra-basmati-rice/pvid/8045889d-f767-418b-8f64-120d60375bd2?marketplaceType=ZEPTO_NOW', '_blank')">
+
+        </div>
+        <div class="card-text-heading">
+          Dalia
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+
+  <section class="about-section">
+    <div class="about-container">
+
+      <!-- LEFT: IMAGE -->
+      <div class="about-image">
+        <img src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/about-us-500.webp"
+          alt="About Us">
+      </div>
+
+      <!-- RIGHT: TEXT -->
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>
+          Vikram Roller Flour Mills Limited is among the pioneers of Agro-products manufacturing, specialized in the
+          best quality of wheat products manufacturing. Vikram roller flour mills were incepted four decades back in
+          1973 in National Capital – New Delhi. In these glorious 50 years, the company has grown as one of the leading
+          manufacturing of wheat products like – Wheat Flour (Atta), White Flour (Maida), Semolina (Suji), Bran (Chokar)
+          and Broken Wheat (Dallia), etc.
+        </p>
+
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="product-heading">
+    Latest Arrival Products
+  </div>
+
+  <div class="swiper cardSwiper">
+
+    <div class="swiper-wrapper">
+
+      <!-- CARD 1 -->
+      <div class="swiper-slide card">
+        <img class="card-logo-img"
+          src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/product-1.webp" alt="logo">
+      </div>
+
+      <div class="swiper-slide card">
+        <img class="card-logo-img"
+          src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/product-2.webp" alt="logo">
+      </div>
+      <div class="swiper-slide card">
+        <img class="card-logo-img"
+          src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/product-3.webp" alt="logo">
+      </div>
+      <div class="swiper-slide card">
+        <img class="card-logo-img"
+          src="https://vikrammillscom.swipepages.media/2025/11/692532d480c1450011af8c59/product-4.webp" alt="logo">
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+  <section class="banner">
+    <img src="./image (1).png" alt="Banner Image" />
+  </section>
+  <section class="custom-cards-section">
+    <div class="custom-cards-container">
+
+      <!-- Card 1 -->
+      <div class="custom-card">
+
+        <p>The production
+          capacity of 330 MT /Dayt.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="custom-card">
+
+        <p>Use of latest process
+          and equipment for
+          production</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="custom-card">
+        <p>Quality as per standards
+          & benchmarks set by
+          government</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="custom-card">
+        <p>Supplying to Leading
+          Players like
+          Mother Dairy , Haldiram, Om Sweet,
+          Perfect Bread etc.
+
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <footer class="custom-footer">
+  <!-- LEFT: Social Icons -->
+  <div class="footer-left">
+    <a href="https://www.facebook.com/VikramRollerFlourMillsLtd" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/vrfmills/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/vrfmills/" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+
+  <!-- CENTER: Logo -->
+  <div class="footer-center">
+    <img src="https://media.swipepages.com/2025/11/692532d480c1450011af8c59/vikram-mills-logo.png" alt="Logo" class="footer-logo">
+  </div>
+
+  <!-- RIGHT: Contact Info -->
+  <div class="footer-right">
+    <p>Phone:  +918448448436</p>
+    <p>Email: enquiry@vrfmills.com  </p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Your init script -->
+  <script defer src="./indexd.js"></script>
+</body>
+
+</html>
