@@ -1,22 +1,32 @@
 const swiper = new Swiper(".mySwiper", {
     loop: true,
     autoplay: {
-        delay: 3000, // auto slide every 3s
+        delay: 3000,
         disableOnInteraction: false,
     },
-    speed: 900, // smooth slide speed
-    effect: "slide", // or "fade"
+    speed: 900,
+    effect: "slide",
+
+    // Disable manual sliding
+    allowTouchMove: false,
+    simulateTouch: false,
+    draggable: false,
+    keyboard: {
+        enabled: false,
+    },
+    mousewheel: {
+        enabled: false,
+    },
+
     pagination: {
         el: ".swiper-pagination",
-        clickable: true,
+        clickable: false, // also disable clicking bullets
     },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+
     centeredSlides: true,
-    centeredSlidesBounds: true,
+    centeredSlidesBounds: false,
 });
+
 
 
 // document.addEventListener("DOMContentLoaded", () => {
