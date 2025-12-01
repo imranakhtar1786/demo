@@ -29,6 +29,12 @@ const swiper = new Swiper(".mySwiper", {
 
 
 
+// function toggleIcons(button) {
+//     const icons = button.nextElementSibling;
+//     icons.classList.toggle("show");
+// }
+
+
 // document.addEventListener("DOMContentLoaded", () => {
 //   const swiper = new Swiper(".cardSwiper", {
 //     loop: true,
