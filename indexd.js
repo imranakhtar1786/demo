@@ -29,7 +29,7 @@ const swiper = new Swiper(".mySwiper", {
 
 
 
-document.querySelectorAll(".mobile-buy").forEach(box => {
+document.querySelectorAll(".mobile-card").forEach(box => {
     box.addEventListener("click", (e) => {
         e.stopPropagation();
 
