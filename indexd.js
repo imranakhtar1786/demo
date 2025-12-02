@@ -1,38 +1,71 @@
 const swiper = new Swiper(".mySwiper", {
-    loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    speed: 900,
-    effect: "slide",
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  speed: 900,
+  effect: "slide",
 
-    // Disable manual sliding
-    allowTouchMove: false,
-    simulateTouch: false,
-    draggable: false,
-    keyboard: {
-        enabled: false,
-    },
-    mousewheel: {
-        enabled: false,
-    },
+  // Disable manual sliding
+  allowTouchMove: false,
+  simulateTouch: false,
+  draggable: false,
+  keyboard: {
+    enabled: false,
+  },
+  mousewheel: {
+    enabled: false,
+  },
 
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: false, // also disable clicking bullets
-    },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: false, // also disable clicking bullets
+  },
 
-    centeredSlides: true,
-    centeredSlidesBounds: false,
+  centeredSlides: true,
+  centeredSlidesBounds: false,
 });
 
 
 
-// function toggleIcons(button) {
-//     const icons = button.nextElementSibling;
-//     icons.classList.toggle("show");
-// }
+document.querySelectorAll(".mobile-buy").forEach(box => {
+    box.addEventListener("click", (e) => {
+        e.stopPropagation();
+
+        const icons = box.querySelector(".mobile-icons");
+        const isOpen = icons.classList.contains("show");
+
+        // Close all popups
+        document.querySelectorAll(".mobile-icons").forEach(i => {
+            i.classList.remove("show");
+            setTimeout(() => i.style.display = "none", 250);
+        });
+
+        // Open only if it was closed
+        if (!isOpen) {
+            icons.style.display = "grid";
+            setTimeout(() => icons.classList.add("show"), 10);
+        }
+    });
+});
+
+// Prevent popup from closing when clicking inside it
+document.querySelectorAll(".mobile-icons").forEach(iconBox => {
+    iconBox.addEventListener("click", (e) => {
+        e.stopPropagation();
+    });
+});
+
+// Close when clicking outside
+document.addEventListener("click", () => {
+    document.querySelectorAll(".mobile-icons").forEach(i => {
+        i.classList.remove("show");
+        setTimeout(() => i.style.display = "none", 250);
+    });
+});
+
+
 
 
 // document.addEventListener("DOMContentLoaded", () => {
