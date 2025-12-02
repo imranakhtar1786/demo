@@ -315,8 +315,8 @@
 
 .custom-footer {
     width: 100%;
-    background-color: #3b3b3b;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -329,7 +329,7 @@
 .footer-left .social-icon {
     margin-right: 1rem;
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     font-size: 1.5rem;
     transition: color 0.3s;
 }
@@ -447,11 +447,10 @@
     flex-direction: column-reverse;
     text-align: center;
     align-items: center;
-    justify-content: end;
+    justify-content:space-between;
     transition: height 0.1s ease;
     overflow-y: hidden;
     padding: 5px;
-    
 
 }
 
@@ -467,14 +466,16 @@
 
 .mobile-icons {
     display: inline;
-    margin-top: 10px;
+    /* margin-top: 30px; */
     opacity: 1;
 }
 
 .mobile-icons img {
+    display: none;
     width: 20px;
     margin: 0 0px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .mobile-card:has(.mobile-buy:hover) {
@@ -483,4 +484,7 @@
 
 .mobile-buy:hover {
     height: 60px !important;
+}
+.mobile-buy:hover .mobile-icons img {
+  display: inline;
 }
